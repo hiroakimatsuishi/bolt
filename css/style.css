@@ -59,8 +59,11 @@
 }
 
 .main {
-  background-color: #f2f2f2;
   padding-top: 70px;
+}
+
+.theme {
+  background-color: #f2f2f2;
 }
 
 .theme-inner {
@@ -107,6 +110,10 @@
 .intro-header-para {
   font-size: 20px;
   margin-top: 35px;
+}
+
+.article {
+  background-color: #f2f2f2;
 }
 
 .article-inner {
@@ -205,6 +212,10 @@
 
 .figure:first-child {
   margin-left: 0;
+}
+
+.navigation {
+  background-color: #f2f2f2;
 }
 
 .nav-inner {
