@@ -1,14 +1,10 @@
 
-.clearfix::after {
-  content: "";
-  display: block;
-  clear: both;
+* {
+  box-sizing: border-box;
 }
 
-.font-instruction {
-  font-family:'Lato','Raleway',sans-serif;
-  text-align: center;
-  z-index: 5;
+.button {
+  text-decoration: none;
 }
 
 .inner {
@@ -16,13 +12,31 @@
   margin: 0 auto;
 }
 
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.font-instruction {
+  font-family:'Lato',sans-serif;
+  text-align: center;
+  z-index: 5;
+}
+
+.is-raleway {
+  font-family:'Raleway';
+}
+
 .header {
   position: fixed;
   background-color: #fff;
-  color: #333;
-  padding: 15px;
   width: 100%;
   z-index: 10;
+}
+
+.header-inner {
+  padding: 15px 0 15px;
 }
 
 .fa-bolt {
@@ -31,35 +45,35 @@
   vertical-align: middle;
 }
 
-.header a {
+.header-button {
   background-color: #74cfae;
   color: #fff;
   font-size: 12px;
   padding: 14px 12px;
   float: right;
-  cursor: pointer;
   transition: 0.3s;
 }
 
-.header a:hover {
+.header-button:hover {
   color: #333;
 }
 
 .main {
   background-color: #f2f2f2;
+  padding-top: 70px;
 }
 
-.theme {
-  padding: 250px 0 250px 0;
+.theme-inner {
+  padding: 250px 0 250px;
 }
 
-.theme h1 {
+.theme-header {
   font-size: 90px;
   font-weight: 700;
-  color: #94cfae;
+  color: #74cfae;
 }
 
-.theme h2 {
+.theme-para {
   font-size: 30px;
   color: #c0c0c0;
   margin-top: 20px;
@@ -75,82 +89,84 @@
 
 .img-phone {
   float: left;
-  width: 30%;
+  width: 330px;
 }
 
 .intro-text {
   float: left;
-  width: 70%;
-  vertical-align: middle;
-  box-sizing: border-box;
+  width: 770px;
+  vertical-align: top;
   color: #fff;
   line-height: 30px;
 }
 
-.intro-text h1 {
+.intro-header {
   font-size: 24px;
 }
 
-.intro-text h2 {
+.intro-header-para {
   font-size: 20px;
   margin-top: 35px;
 }
 
-.article h1 {
+.article-inner {
+  padding: 60px 0 70px;
+}
+
+.article-header {
   font-size: 24px;
-  padding-top: 60px;
 }
 
 .article-imgs {
   font-size: 0;
-  padding-top: 40px;
+  margin-top: 40px;
 }
 
-.article-imgs li {
+.article-img-button {
   display: inline-block;
   margin-left: 100px;
   margin-top: 80px;
   opacity: 0.7;
-  cursor: pointer;
   transition: 0.3s;
 }
 
-.article-imgs li:hover {
+.article-img-button:hover {
   opacity: 1;
 }
 
-.article-imgs li:nth-child(3n+1) {
+.article-img-button:nth-child(3n+1) {
   margin-left: 0;
 }
 
-.article-imgs li:nth-child(-n+3) {
+.article-img-button:nth-child(-n+3) {
   margin-top: 0;
 }
 
 .article-text {
   margin-top: 90px;
-  padding-bottom: 70px;
 }
 
-.article-text a {
+.article-text-para {
+  margin-left: 60px;
+  float: left;
+  width: 580px;
+  line-height: 25px;
+  font-size: 20px;
+  margin-left: 100px;
+}
+
+.article-text-button {
   padding: 14px 20px;
   float: left;
   background-color: #74cfae;
   color: #fff;
   font-size: 12px;
   margin-left: 90px;
-  cursor: pointer;
   transition: 0.3s;
 }
 
-.article-text a:hover {
+.article-text-button:hover {
   color: #333;
-}
-.article-text h2 {
-  float: left;
-  width: 70%;
-  line-height: 25px;
-  font-size: 20px;
 }
 
 .content {
@@ -163,31 +179,31 @@
   padding-bottom: 100px
 }
 
-.article-text-inner a:hover {
-  color: #333;
+.button-figures {
+  margin-top: 40px;
 }
 
-.content-inner ul {
-  padding-top: 40px;
-}
-
-.content-inner p {
+.figure-names {
   font-size: 16px;
   color: #fff;
-  padding: 5px;
+  margin-top: 20px;
 }
 
-.content h1 {
+.content-header {
   color: #fff;
   font-size: 24px;
 }
 
-.content li {
+.content-figures {
+  margin-top: 50px;
+}
+
+.figure {
   display: inline-block;
   margin-left: 180px;
 }
 
-.content li:first-child {
+.figure:first-child {
   margin-left: 0;
 }
 
@@ -196,18 +212,16 @@
   font-size: 0;
 }
 
-.nav-inner a {
+.sns-button {
   display: inline-block;
   width: 185px;
   font-size: 40px;
   padding: 25px;
   color: #74cfae;
-  box-sizing: border-box;
-  cursor: pointer;
   transition: 0.3s;
 }
 
-.nav-inner a:hover {
+.sns-button:hover {
   background-color: #fff;
 }
 
@@ -215,12 +229,11 @@
   background-color: #74cfae;
 }
 
-.footer {
-  padding-top: 20px;
-  padding-bottom: 25px;
+.footer-inner {
+  padding: 20px 0 25px;
 }
-.footer p {
-  float: right;
+.footer-para {
+  text-align: right;
   color: #fff;
 }
 
