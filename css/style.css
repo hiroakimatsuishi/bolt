@@ -21,7 +21,6 @@
 .font-instruction {
   font-family:'Lato',sans-serif;
   text-align: center;
-  z-index: 5;
 }
 
 .is-raleway {
@@ -195,7 +194,6 @@
 .nav-inner {
   font-size: 0;
   padding: 200px 0;
-  font-size: 0;
 }
 
 .sns-button {
@@ -323,6 +321,10 @@
 
   .figure:first-child {
     margin-top: 0;
+  }
+
+  .sns-button {
+    width: 25%;
   }
 }
 
